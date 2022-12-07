@@ -17,6 +17,10 @@
 		59AFBA9E294072EA0039898D /* IvyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFBA9D294072EA0039898D /* IvyUITests.swift */; };
 		59AFBAA0294072EA0039898D /* IvyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFBA9F294072EA0039898D /* IvyUITestsLaunchTests.swift */; };
 		AD1190C52940792100688CEB /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190C42940792100688CEB /* FeedView.swift */; };
+		AD1190CA29407B4400688CEB /* PostFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190C929407B4400688CEB /* PostFilterViewModel.swift */; };
+		AD1190CF29407C3500688CEB /* PostsRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190CE29407C3500688CEB /* PostsRawView.swift */; };
+		AD1190D429407D0300688CEB /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190D329407D0300688CEB /* NewPostView.swift */; };
+		AD1190D629407D4800688CEB /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190D529407D4800688CEB /* TextArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		59AFBA9D294072EA0039898D /* IvyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IvyUITests.swift; sourceTree = "<group>"; };
 		59AFBA9F294072EA0039898D /* IvyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IvyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AD1190C42940792100688CEB /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		AD1190C929407B4400688CEB /* PostFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFilterViewModel.swift; sourceTree = "<group>"; };
+		AD1190CE29407C3500688CEB /* PostsRawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRawView.swift; sourceTree = "<group>"; };
+		AD1190D329407D0300688CEB /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		AD1190D529407D4800688CEB /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +134,14 @@
 			isa = PBXGroup;
 			children = (
 				5933B62029407DA4003A17D2 /* Authentication */,
+				AD1190CB29407C0400688CEB /* New Group */,
 				59AFBA82294072E80039898D /* IvyApp.swift */,
 				59AFBA84294072E80039898D /* ContentView.swift */,
+				AD1190D029407CA700688CEB /* UploadPost */,
+				AD1190CC29407C0E00688CEB /* Components */,
+				AD1190C629407A8800688CEB /* Feed */,
 				59AFBA86294072E90039898D /* Assets.xcassets */,
 				59AFBA88294072E90039898D /* Preview Content */,
-				AD1190C42940792100688CEB /* FeedView.swift */,
 			);
 			path = Ivy;
 			sourceTree = "<group>";
@@ -158,6 +169,79 @@
 				59AFBA9F294072EA0039898D /* IvyUITestsLaunchTests.swift */,
 			);
 			path = IvyUITests;
+			sourceTree = "<group>";
+		};
+		AD1190C629407A8800688CEB /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AD1190C729407A9C00688CEB /* ViewModels */,
+				AD1190C829407AB100688CEB /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		AD1190C729407A9C00688CEB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD1190C929407B4400688CEB /* PostFilterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD1190C829407AB100688CEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD1190C42940792100688CEB /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD1190CB29407C0400688CEB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AD1190CC29407C0E00688CEB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD1190CD29407C2000688CEB /* Posts */,
+				AD1190D529407D4800688CEB /* TextArea.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AD1190CD29407C2000688CEB /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				AD1190CE29407C3500688CEB /* PostsRawView.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		AD1190D029407CA700688CEB /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+				AD1190D229407CDA00688CEB /* ViewModels */,
+				AD1190D129407CD300688CEB /* Views */,
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		AD1190D129407CD300688CEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD1190D329407D0300688CEB /* NewPostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD1190D229407CDA00688CEB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,11 +374,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1190CA29407B4400688CEB /* PostFilterViewModel.swift in Sources */,
+				AD1190D629407D4800688CEB /* TextArea.swift in Sources */,
 				59AFBA85294072E80039898D /* ContentView.swift in Sources */,
 				AD1190C52940792100688CEB /* FeedView.swift in Sources */,
 				5933B62429407E38003A17D2 /* LoginView.swift in Sources */,
+				AD1190D429407D0300688CEB /* NewPostView.swift in Sources */,
 				59AFBA83294072E80039898D /* IvyApp.swift in Sources */,
 				5933B62629407E59003A17D2 /* RegisterationView.swift in Sources */,
+				AD1190CF29407C3500688CEB /* PostsRawView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
