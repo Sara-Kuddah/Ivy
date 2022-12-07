@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NewPostView: View {
+
     @State private var caption = ""
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
