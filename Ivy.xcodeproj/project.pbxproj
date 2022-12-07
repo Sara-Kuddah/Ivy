@@ -134,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				5933B62029407DA4003A17D2 /* Authentication */,
-				AD1190CB29407C0400688CEB /* New Group */,
 				59AFBA82294072E80039898D /* IvyApp.swift */,
 				59AFBA84294072E80039898D /* ContentView.swift */,
 				AD1190D029407CA700688CEB /* UploadPost */,
