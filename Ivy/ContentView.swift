@@ -10,17 +10,31 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Rectangle()
+                .fill(.green)
+                .frame(width: 350, height: 1)
+            Text("What eco-friendly habits have you accomplished today?")
+                .foregroundColor(.green)
+               
+                .multilineTextAlignment(.center)
+            Rectangle()
+                .fill(.green)
+                .frame(width: 350, height: 1)
+                .padding(.bottom, 550)
+           
+               
+                
+                
+                
+            }
+            
         }
-        .padding()
+        
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
