@@ -10,17 +10,33 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+            search_bar_tool()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+            Rectangle()
+                .fill(Color("ourgreen"))
+                .frame(width: 350, height: 1)
+            Text("What eco-friendly habits have you accomplished today?")
+                .foregroundColor(Color("ourgreen"))
+               
+                .multilineTextAlignment(.center)
+            Rectangle()
+                .fill(Color("ourgreen"))
+                .frame(width: 350, height: 1)
+                .padding(.bottom, 550)
+           
+               
+                
+                
+                
+            }
+            
+        }
+        
     }
-}
+    
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }
