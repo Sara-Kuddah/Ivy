@@ -10,15 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            search_bar_tool()
+
             Rectangle()
-                .fill(.green)
+                .fill(Color("ourgreen"))
                 .frame(width: 350, height: 1)
             Text("What eco-friendly habits have you accomplished today?")
-                .foregroundColor(.green)
+                .foregroundColor(Color("ourgreen"))
                
                 .multilineTextAlignment(.center)
             Rectangle()
-                .fill(.green)
+                .fill(Color("ourgreen"))
                 .frame(width: 350, height: 1)
                 .padding(.bottom, 550)
            
