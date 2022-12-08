@@ -19,12 +19,13 @@ struct FeedView: View {
                 ForEach(PostFilterViewModel.allCases, id: \.rawValue){ item in
                     VStack{
                         Text(item.title)
+                            .foregroundColor(Color("ourgreen"))
                             .font(.headline)
                             .fontWeight(selectedFilter == item ? .semibold: .regular)
                         //   .foregroundColor(selectedFilter == item .black,: .gray)
                         if selectedFilter == item {
                             Capsule()
-                                .foregroundColor(Color(.systemBlue))
+                                .foregroundColor(Color("ourgreen"))
                                 .frame(height: 3)
                                 .matchedGeometryEffect(id: "filter", in: animation)
                             
@@ -57,27 +58,29 @@ struct FeedView: View {
                 Button{
                     ShowNewPostView.toggle()
                 }label:{
-                    Image("plus.bubble")
+                    Image("plus.bubble.fill")
+                        .renderingMode(.original)
                         .resizable()
-                        .renderingMode(.template)
-                        .frame(width: 28, height: 28)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 80, height: 80)
+                        .foregroundColor(Color("ourdarkgray"))
                         .padding()
                 }
-                .background(Color(.systemBlue))
-                .foregroundColor(.white)
-                .clipShape(Circle())
                 .padding()
                 .fullScreenCover(isPresented: $ShowNewPostView) {
                     NewPostView()
+                       
                 }
             }
         }
+        
     }
 }
     
     struct FeedView_Previews: PreviewProvider {
         static var previews: some View {
             FeedView()
+                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("ouroffwhite")/*@END_MENU_TOKEN@*/)
         }
     }
 

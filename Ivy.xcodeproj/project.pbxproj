@@ -134,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				5933B62029407DA4003A17D2 /* Authentication */,
-				AD1190CB29407C0400688CEB /* New Group */,
 				59AFBA82294072E80039898D /* IvyApp.swift */,
 				59AFBA84294072E80039898D /* ContentView.swift */,
 				AD1190D029407CA700688CEB /* UploadPost */,
@@ -194,13 +193,6 @@
 				AD1190C42940792100688CEB /* FeedView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		AD1190CB29407C0400688CEB /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		AD1190CC29407C0E00688CEB /* Components */ = {

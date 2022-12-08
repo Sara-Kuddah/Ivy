@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NewPostView: View {
+
     @State private var caption = ""
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
@@ -17,8 +18,8 @@ struct NewPostView: View {
                     presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Cancel")
-                        .foregroundColor(Color(.systemBlue))
-                
+                        .foregroundColor(Color("ourgreen"))
+
                 }
                 Spacer()
                 Button {
@@ -28,8 +29,8 @@ struct NewPostView: View {
                         .bold()
                         .padding(.horizontal)
                         .padding(.vertical, 8)
-                        .background(Color(.systemBlue))
-                        .foregroundColor(.white)
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("ourgreen")/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(Color("ouroffwhite"))
                         .clipShape(Capsule())
                 }
             }
