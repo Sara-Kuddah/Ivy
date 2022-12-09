@@ -15,7 +15,7 @@ struct FeedView: View {
 
         
         VStack{
-            
+            search_bar_tool()
             HStack{
                 ForEach(PostFilterViewModel.allCases, id: \.rawValue){ item in
                     VStack{
