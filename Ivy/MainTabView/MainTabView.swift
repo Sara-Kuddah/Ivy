@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State private var selectedIndex = 1
+    @State private var selectedIndex = 0
+
     var body: some View {
         
         TabView(selection: $selectedIndex){
@@ -18,6 +19,7 @@ struct MainTabView: View {
                 }
                 .tabItem{
                     Image(systemName: "leaf")
+                    Text("Habits")
                 }.tag(0)
             
             FeedView()
@@ -26,6 +28,8 @@ struct MainTabView: View {
                 }
                 .tabItem{
                     Image(systemName: "rectangle.3.group.bubble.left")
+                    Text("Community")
+
                 }.tag(1)
             
             Notification()
@@ -34,6 +38,8 @@ struct MainTabView: View {
                 }
                 .tabItem{
                     Image(systemName: "bell")
+                    Text("Notification")
+
                 }.tag(2)
             
             LoginView()
@@ -42,9 +48,14 @@ struct MainTabView: View {
                 }
                 .tabItem{
                     Image(systemName: "person")
+                    Text("Profile")
+
                 }.tag(3)
         }
         
+        .accentColor(Color("ourgreen"))
+        .background(.thinMaterial)
+
 
 
     }
