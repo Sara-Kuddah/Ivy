@@ -41,7 +41,7 @@ struct NewPostView: View {
                 Circle()
                     .frame(width: 70, height: 70)
                 
-            TextArea("What did you do?", text: $caption)                
+            TextArea("Hello?", text: $caption)
             }
             .padding()
             
