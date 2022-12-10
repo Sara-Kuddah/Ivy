@@ -12,10 +12,10 @@ struct FeedView: View {
     @State private var selectedFilter: PostFilterViewModel = .trending
     @Namespace var animation
     var body: some View {
-
+        
         
         VStack{
-            search_bar_tool()
+                        
             HStack{
                 ForEach(PostFilterViewModel.allCases, id: \.rawValue){ item in
                     VStack{
@@ -44,6 +44,7 @@ struct FeedView: View {
                 }
                 
             }
+            
             .overlay(Divider() .offset (x: 0 ,y: 20))
             
             ZStack (alignment: .bottomTrailing){
@@ -56,6 +57,7 @@ struct FeedView: View {
                         
                     }
                 }
+            
                 Button{
                     ShowNewPostView.toggle()
                 }label:{
@@ -70,11 +72,11 @@ struct FeedView: View {
                 .padding()
                 .fullScreenCover(isPresented: $ShowNewPostView) {
                     NewPostView()
-                       
+                    
                 }
             }
         }
-        
+    
         
     }
 }
