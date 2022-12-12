@@ -14,8 +14,10 @@ struct FeedView: View {
     var body: some View {
         
         
-        VStack{
-                        
+        VStack( spacing: -500){
+            search_bar_tool()
+                
+            VStack{
             HStack{
                 ForEach(PostFilterViewModel.allCases, id: \.rawValue){ item in
                     VStack{
@@ -43,7 +45,7 @@ struct FeedView: View {
                     }
                 }
                 
-            }
+            }//.padding(.top,-275)
             
             .overlay(Divider() .offset (x: 0 ,y: 20))
             
@@ -57,7 +59,7 @@ struct FeedView: View {
                         
                     }
                 }
-            
+                
                 Button{
                     ShowNewPostView.toggle()
                 }label:{
@@ -75,6 +77,7 @@ struct FeedView: View {
                     
                 }
             }
+        }//.padding(.top,-250)
         }
     
         
