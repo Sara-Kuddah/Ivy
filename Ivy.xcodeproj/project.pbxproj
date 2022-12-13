@@ -10,6 +10,7 @@
 		1E7C2C052941C4F4002E31B7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C2C042941C4F4002E31B7 /* SettingView.swift */; };
 		1EAEDD41294855B60000E977 /* PolicyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAEDD40294855B60000E977 /* PolicyUIView.swift */; };
 		1EAEDD432948562F0000E977 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAEDD422948562F0000E977 /* About.swift */; };
+		1EAEDD5F294863D60000E977 /* sign out.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAEDD5E294863D60000E977 /* sign out.swift */; };
 		5933B62429407E38003A17D2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933B62329407E38003A17D2 /* LoginView.swift */; };
 		5933B62629407E59003A17D2 /* RegisterationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933B62529407E59003A17D2 /* RegisterationView.swift */; };
 		59AFBA83294072E80039898D /* IvyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFBA82294072E80039898D /* IvyApp.swift */; };
@@ -53,6 +54,7 @@
 		1E7C2C042941C4F4002E31B7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		1EAEDD40294855B60000E977 /* PolicyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyUIView.swift; sourceTree = "<group>"; };
 		1EAEDD422948562F0000E977 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		1EAEDD5E294863D60000E977 /* sign out.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sign out.swift"; sourceTree = "<group>"; };
 		5933B62329407E38003A17D2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5933B62529407E59003A17D2 /* RegisterationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationView.swift; sourceTree = "<group>"; };
 		59AFBA7F294072E80039898D /* Ivy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				1E7C2C042941C4F4002E31B7 /* SettingView.swift */,
 				1EAEDD40294855B60000E977 /* PolicyUIView.swift */,
 				1EAEDD422948562F0000E977 /* About.swift */,
+				1EAEDD5E294863D60000E977 /* sign out.swift */,
 			);
 			path = settings;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			files = (
 				AD1190CA29407B4400688CEB /* PostFilterViewModel.swift in Sources */,
 				1E7C2C052941C4F4002E31B7 /* SettingView.swift in Sources */,
+				1EAEDD5F294863D60000E977 /* sign out.swift in Sources */,
 				ADB1DFEA2941D3700069F270 /* ImagePicker.swift in Sources */,
 				AD1190D629407D4800688CEB /* TextArea.swift in Sources */,
 				59AFBA85294072E80039898D /* ContentView.swift in Sources */,
