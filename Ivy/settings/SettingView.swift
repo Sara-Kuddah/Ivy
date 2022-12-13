@@ -92,6 +92,19 @@ Toggle(isOn: $Language) {
             
         }.padding(.bottom, 200.0)
             .padding(.trailing, 38.0)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
         struct SettingView_Previews: PreviewProvider {
             static var previews: some View {
