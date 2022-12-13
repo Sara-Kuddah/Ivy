@@ -14,8 +14,10 @@ struct FeedView: View {
     var body: some View {
         
         
-        VStack( spacing: -500){
+        VStack{
             search_bar_tool()
+                .frame( height: 100)
+
                 
             VStack{
             HStack{
@@ -45,7 +47,7 @@ struct FeedView: View {
                     }
                 }
                 
-            }//.padding(.top,-275)
+            }
             
             .overlay(Divider() .offset (x: 0 ,y: 20))
             
@@ -77,7 +79,7 @@ struct FeedView: View {
                     
                 }
             }
-        }//.padding(.top,-250)
+        }
         }
     
         
