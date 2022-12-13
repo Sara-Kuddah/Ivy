@@ -14,29 +14,7 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack{
-                //Divider()
-                Rectangle()
-                    .frame(height: 1)
-                    .padding()
-                    .padding(.top , 50)
-                    .foregroundColor(Color("ourlightgreen"))
-                
-                //.frame(width: 20)
-                VStack{
-                    Text("Welcome To Ivy!")
-                        .font(.title)
-                        .foregroundColor(Color("ourlightgreen"))
-                    //.fontWeight(.semibold)
-                    Text("Please Login So You Can Access This Feature")
-                        .foregroundColor(Color("ourlightgreen"))
-                    //.font(.title)
-                    //.fontWeight(.semibold)
-                }
-                Rectangle()
-                    .frame(height: 1)
-                    .padding()
-                    .foregroundColor(Color("ourlightgreen"))
-                
+                AuthenticationHeader(title1: "Welcome To Ivy!", title2: "Please Login So You Can Access This Feature")
                 //.padding(.top , 600)
                 
                 Text("Login")
@@ -56,7 +34,7 @@ struct LoginView: View {
                 
                 
                 Button{
-                    print("sign up here")
+                    print("sign in here")
                 } label: {
                     Text("Sign in")
                         .font(.headline)
@@ -82,7 +60,7 @@ struct LoginView: View {
                 
                 //Text("Sign up") //Forgot Password
                 NavigationLink {
-                    ContentView()
+                    RegisterationView()
                     .navigationBarHidden(true)
                 } label: {
                     Text("Not A Member? Sign Up")
