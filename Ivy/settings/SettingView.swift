@@ -21,7 +21,7 @@ struct SettingView: View {
                 .padding(.trailing, 209.0)
                 .opacity(1)
            
-    VStack(alignment: .leading, spacing: 23){
+    VStack(alignment: .leading, spacing: 24){
 
               HStack{
                     Image(systemName: "globe")
@@ -30,6 +30,7 @@ struct SettingView: View {
                   
 Toggle(isOn: $Language) {
     Text("Language")
+        .font(.title3)
                   }
 
                   

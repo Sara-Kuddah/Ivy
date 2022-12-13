@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1E7C2C052941C4F4002E31B7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C2C042941C4F4002E31B7 /* SettingView.swift */; };
+		1EAEDD41294855B60000E977 /* PolicyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAEDD40294855B60000E977 /* PolicyUIView.swift */; };
+		1EAEDD432948562F0000E977 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAEDD422948562F0000E977 /* About.swift */; };
 		5933B62429407E38003A17D2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933B62329407E38003A17D2 /* LoginView.swift */; };
 		5933B62629407E59003A17D2 /* RegisterationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933B62529407E59003A17D2 /* RegisterationView.swift */; };
 		59AFBA83294072E80039898D /* IvyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFBA82294072E80039898D /* IvyApp.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		1E7C2C042941C4F4002E31B7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		1EAEDD40294855B60000E977 /* PolicyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyUIView.swift; sourceTree = "<group>"; };
+		1EAEDD422948562F0000E977 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		5933B62329407E38003A17D2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5933B62529407E59003A17D2 /* RegisterationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationView.swift; sourceTree = "<group>"; };
 		59AFBA7F294072E80039898D /* Ivy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				1E7C2C042941C4F4002E31B7 /* SettingView.swift */,
+				1EAEDD40294855B60000E977 /* PolicyUIView.swift */,
+				1EAEDD422948562F0000E977 /* About.swift */,
 			);
 			path = settings;
 			sourceTree = "<group>";
@@ -418,12 +424,14 @@
 				59AFBA85294072E80039898D /* ContentView.swift in Sources */,
 				ADB1E00A2941D8C80069F270 /* UploadAnImage.swift in Sources */,
 				AD1190C52940792100688CEB /* FeedView.swift in Sources */,
+				1EAEDD432948562F0000E977 /* About.swift in Sources */,
 				5933B62429407E38003A17D2 /* LoginView.swift in Sources */,
 				AD1190D429407D0300688CEB /* NewPostView.swift in Sources */,
 				ADB1DFE52941C7F30069F270 /* MainTabView.swift in Sources */,
 				59AFBA83294072E80039898D /* IvyApp.swift in Sources */,
 				F5EBC28F2941C04600E39F5B /* habit squares .swift in Sources */,
 				ADB1DFE72941C8560069F270 /* Notification.swift in Sources */,
+				1EAEDD41294855B60000E977 /* PolicyUIView.swift in Sources */,
 				5933B62629407E59003A17D2 /* RegisterationView.swift in Sources */,
 				AD1190CF29407C3500688CEB /* PostsRawView.swift in Sources */,
 				F5EBC28B2941BE1200E39F5B /* search bar tool.swift in Sources */,
