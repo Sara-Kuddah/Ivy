@@ -56,8 +56,6 @@ struct LoginView: View {
 //                    Text("Register")
 //                }
                 //}
-                
-                
                 //Text("Sign up") //Forgot Password
                 NavigationLink {
                     RegisterationView()

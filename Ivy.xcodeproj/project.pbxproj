@@ -15,6 +15,7 @@
 		5933B62629407E59003A17D2 /* RegisterationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933B62529407E59003A17D2 /* RegisterationView.swift */; };
 		5953CDB92941D8BC002EEF51 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5953CDB82941D8BC002EEF51 /* CustomInputField.swift */; };
 		5953CDBC2941E049002EEF51 /* AuthenticationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5953CDBB2941E049002EEF51 /* AuthenticationHeader.swift */; };
+		59AA09F32949AD2F006387E7 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AA09F22949AD2F006387E7 /* OnBoarding.swift */; };
 		59AFBA83294072E80039898D /* IvyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFBA82294072E80039898D /* IvyApp.swift */; };
 		59AFBA85294072E80039898D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFBA84294072E80039898D /* ContentView.swift */; };
 		59AFBA87294072E90039898D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AFBA86294072E90039898D /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		5933B62529407E59003A17D2 /* RegisterationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationView.swift; sourceTree = "<group>"; };
 		5953CDB82941D8BC002EEF51 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		5953CDBB2941E049002EEF51 /* AuthenticationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeader.swift; sourceTree = "<group>"; };
+		59AA09F22949AD2F006387E7 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		59AFBA7F294072E80039898D /* Ivy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AFBA82294072E80039898D /* IvyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IvyApp.swift; sourceTree = "<group>"; };
 		59AFBA84294072E80039898D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		59AFBA81294072E80039898D /* Ivy */ = {
 			isa = PBXGroup;
 			children = (
+				59AA09F22949AD2F006387E7 /* OnBoarding.swift */,
 				1E7C2C032941C4BF002E31B7 /* settings */,
 				5933B62029407DA4003A17D2 /* Authentication */,
 				59AFBA84294072E80039898D /* ContentView.swift */,
@@ -444,6 +447,7 @@
 				ADB1E00A2941D8C80069F270 /* UploadAnImage.swift in Sources */,
 				AD1190C52940792100688CEB /* FeedView.swift in Sources */,
 				5953CDBC2941E049002EEF51 /* AuthenticationHeader.swift in Sources */,
+				59AA09F32949AD2F006387E7 /* OnBoarding.swift in Sources */,
 				1EAEDD432948562F0000E977 /* About.swift in Sources */,
 				5933B62429407E38003A17D2 /* LoginView.swift in Sources */,
 				AD1190D429407D0300688CEB /* NewPostView.swift in Sources */,
