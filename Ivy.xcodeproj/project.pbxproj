@@ -27,6 +27,7 @@
 		AD1190CF29407C3500688CEB /* PostsRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190CE29407C3500688CEB /* PostsRawView.swift */; };
 		AD1190D429407D0300688CEB /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190D329407D0300688CEB /* NewPostView.swift */; };
 		AD1190D629407D4800688CEB /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190D529407D4800688CEB /* TextArea.swift */; };
+		ADA8A3672949AFB200D65D3A /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8A3662949AFB200D65D3A /* LikeButtonView.swift */; };
 		ADB1DFE52941C7F30069F270 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1DFE42941C7F30069F270 /* MainTabView.swift */; };
 		ADB1DFE72941C8560069F270 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1DFE62941C8560069F270 /* Notification.swift */; };
 		ADB1DFEA2941D3700069F270 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1DFE92941D3700069F270 /* ImagePicker.swift */; };
@@ -77,6 +78,7 @@
 		AD1190CE29407C3500688CEB /* PostsRawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRawView.swift; sourceTree = "<group>"; };
 		AD1190D329407D0300688CEB /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		AD1190D529407D4800688CEB /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		ADA8A3662949AFB200D65D3A /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
 		ADB1DFE42941C7F30069F270 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		ADB1DFE62941C8560069F270 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		ADB1DFE92941D3700069F270 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				AD1190CE29407C3500688CEB /* PostsRawView.swift */,
+				ADA8A3662949AFB200D65D3A /* LikeButtonView.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				ADB1DFEA2941D3700069F270 /* ImagePicker.swift in Sources */,
 				AD1190D629407D4800688CEB /* TextArea.swift in Sources */,
 				59AFBA85294072E80039898D /* ContentView.swift in Sources */,
+				ADA8A3672949AFB200D65D3A /* LikeButtonView.swift in Sources */,
 				F5EBC2912941D06F00E39F5B /* habit squares test.swift in Sources */,
 				ADB1E00A2941D8C80069F270 /* UploadAnImage.swift in Sources */,
 				AD1190C52940792100688CEB /* FeedView.swift in Sources */,
@@ -454,7 +458,6 @@
 				F5EBC2CD2948607A00E39F5B /* grids.swift in Sources */,
 				ADB1DFE52941C7F30069F270 /* MainTabView.swift in Sources */,
 				59AFBA83294072E80039898D /* IvyApp.swift in Sources */,
-				F5EBC28F2941C04600E39F5B /* habit squares .swift in Sources */,
 				ADB1DFE72941C8560069F270 /* Notification.swift in Sources */,
 				1EAEDD41294855B60000E977 /* PolicyUIView.swift in Sources */,
 				5933B62629407E59003A17D2 /* RegisterationView.swift in Sources */,

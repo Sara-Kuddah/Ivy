@@ -71,8 +71,10 @@ struct PostsRawView: View {
                 Button{
                     //action goes here
                 }label: {
-                    Image(systemName: "heart")
-                        .font(.subheadline)
+                    LikeButtonView()
+
+//                    Image(systemName: "heart")
+//                        .font(.subheadline)
                 }
                 
                 Spacer()
