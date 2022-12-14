@@ -99,35 +99,27 @@ struct SingleOnbording: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300, height: 300)
-                //    Text(onbordingType.title)
-                //        .font(.title).bold()
                 
                 Text(onbordingType.description)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.black)
                     if onbordingType == .remind {
                         
-                        //LoginView()
-//                        Text("hi")
-//                NavigationLink(destination: LoginView()){
-//                    Text("Get Started")
-//                        .font(.headline)
-//                        .padding()
-//                        .foregroundColor(.white)
-//                        .frame(width: 300, height: 50)
-//                        .background(Color("ourgreen"))
-//                        .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
-//                }
+                       
+
                     
-//                    Button("Get Started"){
-////                        GoToLogin()
-//                    }
-//                    .font(.headline)
-//                    .padding()
-//                    .foregroundColor(.white)
-//                    .frame(width: 300, height: 50)
-//                    .background(Color("ourgreen"))
-//                    .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                    Button("Get Started"){
+                        showLogingPage.toggle()
+                    }
+                    .font(.headline)
+                    .padding()
+                    .foregroundColor(.white)
+                    .frame(width: 300, height: 50)
+                    .background(Color("ourgreen"))
+                    .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                    .fullScreenCover(isPresented: $showLogingPage) {
+                        ContentView()
+                    }
                 }
             }
             .padding(.horizontal,40)

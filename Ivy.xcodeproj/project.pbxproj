@@ -16,6 +16,7 @@
 		5953CDB92941D8BC002EEF51 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5953CDB82941D8BC002EEF51 /* CustomInputField.swift */; };
 		5953CDBC2941E049002EEF51 /* AuthenticationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5953CDBB2941E049002EEF51 /* AuthenticationHeader.swift */; };
 		59AA09F32949AD2F006387E7 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AA09F22949AD2F006387E7 /* OnBoarding.swift */; };
+		59AA09F52949C984006387E7 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AA09F42949C984006387E7 /* Habits.swift */; };
 		59AFBA83294072E80039898D /* IvyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFBA82294072E80039898D /* IvyApp.swift */; };
 		59AFBA85294072E80039898D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFBA84294072E80039898D /* ContentView.swift */; };
 		59AFBA87294072E90039898D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AFBA86294072E90039898D /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		5953CDB82941D8BC002EEF51 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		5953CDBB2941E049002EEF51 /* AuthenticationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeader.swift; sourceTree = "<group>"; };
 		59AA09F22949AD2F006387E7 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		59AA09F42949C984006387E7 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
 		59AFBA7F294072E80039898D /* Ivy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AFBA82294072E80039898D /* IvyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IvyApp.swift; sourceTree = "<group>"; };
 		59AFBA84294072E80039898D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				1E7C2C032941C4BF002E31B7 /* settings */,
 				5933B62029407DA4003A17D2 /* Authentication */,
 				59AFBA84294072E80039898D /* ContentView.swift */,
+				59AA09F42949C984006387E7 /* Habits.swift */,
 				F5EBC28E2941C04600E39F5B /* habit squares .swift */,
 				F5EBC28A2941BE1200E39F5B /* search bar tool.swift */,
 				AD1190D029407CA700688CEB /* UploadPost */,
@@ -453,6 +456,7 @@
 				AD1190D429407D0300688CEB /* NewPostView.swift in Sources */,
 				ADB1DFE52941C7F30069F270 /* MainTabView.swift in Sources */,
 				59AFBA83294072E80039898D /* IvyApp.swift in Sources */,
+				59AA09F52949C984006387E7 /* Habits.swift in Sources */,
 				F5EBC28F2941C04600E39F5B /* habit squares .swift in Sources */,
 				ADB1DFE72941C8560069F270 /* Notification.swift in Sources */,
 				1EAEDD41294855B60000E977 /* PolicyUIView.swift in Sources */,
