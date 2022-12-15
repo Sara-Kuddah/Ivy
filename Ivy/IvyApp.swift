@@ -11,7 +11,8 @@ import SwiftUI
 struct IvyApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            //LoginView()
+            image()
         }
     }
 }

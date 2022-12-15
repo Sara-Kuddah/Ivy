@@ -9,15 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       
         
-
+        ZStack{
+            Color("ouroffwhite")
+                .ignoresSafeArea()
             
-        VStack {
-            search_bar_tool()
-                .frame( height: 120)
-            
-            VStack {
+            ZStack{
+                VStack {
+                    search_bar_tool()
+                        .frame( height: 150)
+                    
+                    // VStack {
                     
                     Rectangle()
                         .fill(Color("ourgreen"))
@@ -26,25 +28,29 @@ struct ContentView: View {
                         .foregroundColor(Color("ourgreen"))
                     
                         .multilineTextAlignment(.center)
+                       // .padding(.bottom, 10)
                     Rectangle()
                         .fill(Color("ourgreen"))
                         .frame(width: 350, height: 1)
-                    .padding(.bottom, 40)
-                
-                grids()
-                Spacer()
-                   
+                        .padding(.bottom, 40)
+                    
+                    
+                    
+                    grids()
+                    Spacer()
                     
                     
                     
                     
                     
+                    
+                }
+                // .padding(.top)
             }
-           // .padding(.top)
+        }   .ignoresSafeArea()
+
         }
-            
-        }
-    }
+    
     
     
     
@@ -55,4 +61,4 @@ struct ContentView: View {
         }
     }
     
-
+}
