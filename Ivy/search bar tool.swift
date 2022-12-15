@@ -11,6 +11,7 @@ struct search_bar_tool: View {
     @State private var searchText = ""
     var body: some View {
       
+        
         VStack{
             NavigationStack {
                 //Text("Searching for \(searchText)")
@@ -18,6 +19,7 @@ struct search_bar_tool: View {
             }
             .searchable(text: $searchText)
             
+
         }
     }
     }

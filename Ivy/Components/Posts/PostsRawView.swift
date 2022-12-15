@@ -59,20 +59,25 @@ struct PostsRawView: View {
                 }
                 Spacer()
                 
-                Button{
-                    //action goes here
-                }label: {
+                Button(action: {
+                    share()
+                }) {
                     Image(systemName: "square.and.arrow.up")
-                        .font(.subheadline)
+                        .renderingMode(.original)
                 }
+  
+               
+                
                 Spacer()
 
                 
                 Button{
                     //action goes here
                 }label: {
-                    Image(systemName: "heart")
-                        .font(.subheadline)
+                    LikeButtonView()
+
+//                    Image(systemName: "heart")
+//                        .font(.subheadline)
                 }
                 
                 Spacer()
@@ -90,8 +95,18 @@ struct PostsRawView: View {
     }
 }
 
+func share() {
+    guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+    let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+       UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+    
+}
+ 
+
 struct PostsRawView_Previews: PreviewProvider {
     static var previews: some View {
         PostsRawView()
     }
 }
+
+

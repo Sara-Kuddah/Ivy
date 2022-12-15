@@ -27,10 +27,13 @@
 		AD1190CF29407C3500688CEB /* PostsRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190CE29407C3500688CEB /* PostsRawView.swift */; };
 		AD1190D429407D0300688CEB /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190D329407D0300688CEB /* NewPostView.swift */; };
 		AD1190D629407D4800688CEB /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1190D529407D4800688CEB /* TextArea.swift */; };
+		ADA8A3672949AFB200D65D3A /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8A3662949AFB200D65D3A /* LikeButtonView.swift */; };
+		ADA8A3692949BE2300D65D3A /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8A3682949BE2300D65D3A /* ShareView.swift */; };
 		ADB1DFE52941C7F30069F270 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1DFE42941C7F30069F270 /* MainTabView.swift */; };
 		ADB1DFE72941C8560069F270 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1DFE62941C8560069F270 /* Notification.swift */; };
 		ADB1DFEA2941D3700069F270 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1DFE92941D3700069F270 /* ImagePicker.swift */; };
 		ADB1E00A2941D8C80069F270 /* UploadAnImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1E0092941D8C80069F270 /* UploadAnImage.swift */; };
+		ADC98239294B0F5300335D7D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC98238294B0F5300335D7D /* SearchBar.swift */; };
 		F5EBC28B2941BE1200E39F5B /* search bar tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBC28A2941BE1200E39F5B /* search bar tool.swift */; };
 		F5EBC2912941D06F00E39F5B /* habit squares test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBC2902941D06F00E39F5B /* habit squares test.swift */; };
 		F5EBC2CD2948607A00E39F5B /* grids.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBC2CC2948607A00E39F5B /* grids.swift */; };
@@ -79,10 +82,13 @@
 		AD1190CE29407C3500688CEB /* PostsRawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRawView.swift; sourceTree = "<group>"; };
 		AD1190D329407D0300688CEB /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		AD1190D529407D4800688CEB /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		ADA8A3662949AFB200D65D3A /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
+		ADA8A3682949BE2300D65D3A /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		ADB1DFE42941C7F30069F270 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		ADB1DFE62941C8560069F270 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		ADB1DFE92941D3700069F270 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ADB1E0092941D8C80069F270 /* UploadAnImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadAnImage.swift; sourceTree = "<group>"; };
+		ADC98238294B0F5300335D7D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		F5EBC28A2941BE1200E39F5B /* search bar tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "search bar tool.swift"; sourceTree = "<group>"; };
 		F5EBC2902941D06F00E39F5B /* habit squares test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "habit squares test.swift"; sourceTree = "<group>"; };
 		F5EBC2CC2948607A00E39F5B /* grids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grids.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 				F5EBC2DA294B0D5C00E39F5B /* popup.swift */,
 				F5EBC2D62949BE4D00E39F5B /* image.swift */,
 				F5EBC28A2941BE1200E39F5B /* search bar tool.swift */,
+				ADC98238294B0F5300335D7D /* SearchBar.swift */,
 				AD1190D029407CA700688CEB /* UploadPost */,
 				AD1190CC29407C0E00688CEB /* Components */,
 				AD1190C629407A8800688CEB /* Feed */,
@@ -268,6 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				AD1190CE29407C3500688CEB /* PostsRawView.swift */,
+				ADA8A3662949AFB200D65D3A /* LikeButtonView.swift */,
+				ADA8A3682949BE2300D65D3A /* ShareView.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -307,10 +316,26 @@
 		ADB1DFE82941D3600069F270 /* ImageUploader */ = {
 			isa = PBXGroup;
 			children = (
-				ADB1DFE92941D3700069F270 /* ImagePicker.swift */,
-				ADB1E0092941D8C80069F270 /* UploadAnImage.swift */,
+				ADC98236294B064B00335D7D /* ViewModels */,
+				ADC98237294B065800335D7D /* View */,
 			);
 			path = ImageUploader;
+			sourceTree = "<group>";
+		};
+		ADC98236294B064B00335D7D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ADB1DFE92941D3700069F270 /* ImagePicker.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ADC98237294B065800335D7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADB1E0092941D8C80069F270 /* UploadAnImage.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA8A3692949BE2300D65D3A /* ShareView.swift in Sources */,
 				5953CDB92941D8BC002EEF51 /* CustomInputField.swift in Sources */,
 				AD1190CA29407B4400688CEB /* PostFilterViewModel.swift in Sources */,
 				1E7C2C052941C4F4002E31B7 /* SettingView.swift in Sources */,
@@ -450,7 +476,9 @@
 				ADB1DFEA2941D3700069F270 /* ImagePicker.swift in Sources */,
 				AD1190D629407D4800688CEB /* TextArea.swift in Sources */,
 				F5EBC2D72949BE4D00E39F5B /* image.swift in Sources */,
+				ADC98239294B0F5300335D7D /* SearchBar.swift in Sources */,
 				59AFBA85294072E80039898D /* ContentView.swift in Sources */,
+				ADA8A3672949AFB200D65D3A /* LikeButtonView.swift in Sources */,
 				F5EBC2912941D06F00E39F5B /* habit squares test.swift in Sources */,
 				ADB1E00A2941D8C80069F270 /* UploadAnImage.swift in Sources */,
 				F5EBC2DB294B0D5C00E39F5B /* popup.swift in Sources */,
