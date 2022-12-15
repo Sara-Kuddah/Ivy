@@ -15,20 +15,19 @@ struct UploadAnImage: View {
         HStack {
             Image(uiImage: self.image)
                 .resizable()
-                .cornerRadius(50)
-                .frame(width: 100, height: 100)
+                .frame(width: 300, height: 200)
                 .background(Color.black.opacity(0.2))
                 .aspectRatio(contentMode: .fill)
-                .clipShape(Circle())
-            
-            Text("Add Photo")
-                .font(.headline)
-                .frame(maxWidth: .infinity)
-                .frame(height: 50)
-                .background(Color("ourgreen"))
-                .cornerRadius(16)
-                .foregroundColor(Color("ouroffwhite"))
-                .padding(.horizontal, 20)
+//                .clipShape(RoundedRectangle(cornerSize: 15))
+          
+//            Text("Add Photo")
+//                .font(.headline)
+//                .frame(maxWidth: .infinity)
+//                .frame(height: 50)
+//                .background(Color("ourgreen"))
+//                .cornerRadius(16)
+//                .foregroundColor(Color("ouroffwhite"))
+//                .padding(.horizontal, 20)
                 .onTapGesture {
                     showSheet = true
                 }

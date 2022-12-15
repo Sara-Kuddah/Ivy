@@ -14,72 +14,79 @@ struct FeedView: View {
     var body: some View {
         
         
-        VStack{
-            search_bar_tool()
-                .frame( height: 100)
-
-                
+        ZStack {
+            Color("ouroffwhite")
+                .ignoresSafeArea()
+            
             VStack{
-            HStack{
-                ForEach(PostFilterViewModel.allCases, id: \.rawValue){ item in
-                    VStack{
-                        Text(item.title)
-                            .foregroundColor(Color("ourgreen"))
-                            .font(.headline)
-                            .fontWeight(selectedFilter == item ? .semibold: .regular)
-                        //   .foregroundColor(selectedFilter == item .black,: .gray)
-                        if selectedFilter == item {
-                            Capsule()
+//                search_bar_tool()
+//                    .frame( height: 100)
+                SearchBar()
+//                    .padding()
+//                   .frame( height: 42)
+
+                VStack{
+                HStack{
+                    ForEach(PostFilterViewModel.allCases, id: \.rawValue){ item in
+                        VStack{
+                            Text(item.title)
                                 .foregroundColor(Color("ourgreen"))
-                                .frame(height: 3)
-                                .matchedGeometryEffect(id: "filter", in: animation)
-                            
-                        } else {
-                            Capsule()
-                                .foregroundColor(Color(.clear))
-                                .frame(height: 3)
+                                .font(.headline)
+                                .fontWeight(selectedFilter == item ? .semibold: .regular)
+                            //   .foregroundColor(selectedFilter == item .black,: .gray)
+                            if selectedFilter == item {
+                                Capsule()
+                                    .foregroundColor(Color("ourgreen"))
+                                    .frame(height: 3)
+                                    .matchedGeometryEffect(id: "filter", in: animation)
+                                
+                            } else {
+                                Capsule()
+                                    .foregroundColor(Color(.clear))
+                                    .frame(height: 3)
+                            }
+                        }
+                        .onTapGesture {
+                            withAnimation(.easeInOut){
+                                self.selectedFilter = item
+                            }
                         }
                     }
-                    .onTapGesture {
-                        withAnimation(.easeInOut){
-                            self.selectedFilter = item
-                        }
-                    }
+                    
                 }
                 
-            }
-            
-            .overlay(Divider() .offset (x: 0 ,y: 20))
-            
-            ZStack (alignment: .bottomTrailing){
-                ScrollView{
-                    LazyVStack {
-                        ForEach(0 ... 20, id: \.self){_ in
-                            PostsRawView()
+                .overlay(Divider() .offset (x: 0 ,y: 20))
+                
+                ZStack (alignment: .bottomTrailing){
+                    ScrollView{
+                        LazyVStack {
+                            ForEach(0 ... 20, id: \.self){_ in
+                                PostsRawView()
+                                
+                            }
                             
                         }
+                    }
+                    
+                    Button{
+                        ShowNewPostView.toggle()
+                    }label:{
+                        Image("plus.bubble.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 70, height: 70)
+                            .foregroundColor(Color("ourdarkgray"))
+                            .padding()
+                    }
+                    .padding()
+                    .fullScreenCover(isPresented: $ShowNewPostView) {
+                        NewPostView()
                         
                     }
                 }
-                
-                Button{
-                    ShowNewPostView.toggle()
-                }label:{
-                    Image("plus.bubble.fill")
-                        .renderingMode(.original)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 80, height: 80)
-                        .foregroundColor(Color("ourdarkgray"))
-                        .padding()
-                }
-                .padding()
-                .fullScreenCover(isPresented: $ShowNewPostView) {
-                    NewPostView()
-                    
-                }
             }
-        }
+            }
         }
     
         

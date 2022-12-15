@@ -17,6 +17,7 @@ struct search_bar_tool: View {
                 // .navigationTitle("Searchable Example")
             }
             .searchable(text: $searchText)
+
         }
     }
     }
