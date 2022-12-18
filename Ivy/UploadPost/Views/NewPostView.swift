@@ -36,17 +36,20 @@ struct NewPostView: View {
             }
             .padding()
             
+
             
             HStack(alignment: .top){
                 Circle()
                     .frame(width: 70, height: 70)
                 
             TextArea("Hello?", text: $caption)
+                
             }
             .padding()
             
             UploadAnImage()
             
+            Spacer()
         }
     }
 }
