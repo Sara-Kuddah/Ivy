@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct NewPostView: View {
-
+    @State private var PostNewPost = false
     @State private var caption = ""
+    
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack{
@@ -22,8 +23,9 @@ struct NewPostView: View {
 
                 }
                 Spacer()
+                
                 Button {
-                    print("Post")
+                    PostNewPost.toggle()
                 } label: {
                     Text("Post")
                         .bold()
@@ -35,7 +37,9 @@ struct NewPostView: View {
                 }
             }
             .padding()
-            
+            .fullScreenCover(isPresented: $PostNewPost) {
+                FeedView()
+            }
 
             
             HStack(alignment: .top){
