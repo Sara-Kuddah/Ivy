@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State private var GoToSting = false
     @State private var selectedFilter: TweetFilterViewModel = .tweets
     @Namespace var animation
     @State var images = ["saveEarth", "energySaving", "ecoWater"]
     @State var points  = [[50,100], [20,100], [130,200], [90,100]]
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
        
         VStack(alignment: .leading){
@@ -29,7 +32,7 @@ struct ProfileView: View {
                 tweetsView
             }
             
-            
+           
             Spacer()
         }
     }
@@ -47,19 +50,33 @@ extension ProfileView{
             Color("ourlightgreen")
                 .ignoresSafeArea()
             
-            VStack {
+            VStack (alignment: .leading){
+                Spacer(minLength: 50)
                 HStack {
+                    Spacer()
+//                    Button {
+//
+//                    } label: {
+//                        Image(systemName: "arrow.left")
+//                            .resizable()
+//                            .frame(width: 20, height: 16)
+//                            .foregroundColor(.white)
+//                           // .offset(x: -15, y: 15)
+//                    }
+                    Button(action: {
+                               self.presentationMode.wrappedValue.dismiss()
+                            }) {
+                                Image(systemName: "arrow.left")
+                                   // .padding()
+                                    .resizable()
+                                                                .frame(width: 20, height: 16)
+                                                                .foregroundColor(.white)
+                                                               // .offset(x: -15, y: 15)
+                            }
+                            .navigationBarHidden(true)
+                    Spacer(minLength: 250)
                     Button {
-                        
-                    } label: {
-                        Image(systemName: "arrow.left")
-                            .resizable()
-                            .frame(width: 20, height: 16)
-                            .foregroundColor(.white)
-                            .offset(x: -15, y: 15)
-                    }
-                    Button {
-                        
+                        GoToSting.toggle()
                     } label: {
                         Image(systemName: "gearshape.fill")
                         //                        .font(.title3)
@@ -67,13 +84,18 @@ extension ProfileView{
                             .resizable()
                             .frame(width: 20, height: 20)
                             .foregroundColor(.white)
-                            .offset(x: 250, y: 20)
+                           // .offset(x: 250, y: 20)
                     }
+                    .fullScreenCover(isPresented: $GoToSting){
+                        Ivy.SettingView()
+                    }
+                    Spacer()
                 }
-
+                
                 Image("profile")
                     .resizable()
-                    .frame(width: 150, height: 150)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 130, height: 130)
                     .clipShape(Circle())
                     .overlay(Circle()
                         .stroke(Color.white, lineWidth: 1))
@@ -83,7 +105,8 @@ extension ProfileView{
                 .offset(x: 30,y : 40)
             }
         }
-        .frame(height: 100)
+        .frame(height: 50)
+        .padding(.bottom,50)
     }
     
     var userInfoDetails: some View{
@@ -151,7 +174,7 @@ extension ProfileView{
     var pointsView: some View{
         VStack{
             HStack{
-                Spacer()
+                //Spacer()
                 Text("Total Points :")
                     .font(.title).bold()
                     .foregroundColor(Color("ourlightgreen"))
@@ -159,8 +182,9 @@ extension ProfileView{
                 Text("\(points[0][0]+points[1][0]+points[2][0]+points[3][0])")
                     .font(.title).bold()
                     .foregroundColor(Color("ourlightgreen"))
-                Spacer()
+                //Spacer()
             }.padding()
+                .padding(.horizontal)
             ScrollView{
                 LazyVStack{
                     ForEach(points.indices, id: \.self){ index in
