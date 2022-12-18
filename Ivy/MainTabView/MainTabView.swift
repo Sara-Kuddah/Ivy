@@ -42,7 +42,7 @@ struct MainTabView: View {
 
                 }.tag(2)
             
-            LoginView()
+            ProfileView()
                 .onTapGesture {
                     self.selectedIndex = 3
                 }
