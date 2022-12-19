@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingView: View {
-    @State private var About = false
+    @State private var ContentView = false
     @State private var Language = true
     @State private var Mode = false
     @State var showpopscrean: Bool = false
@@ -111,7 +111,7 @@ struct SettingView: View {
                             
                             
                             Button {
-                                About.toggle()
+                                ContentView.toggle()
                                 // Do something
                             } label: {
                                 
@@ -137,7 +137,7 @@ struct SettingView: View {
                                 
                             }
                             Button {
-                                About.toggle()
+                                ContentView.toggle()
                             } label: {
                                 
                                 Label("Delete Account", systemImage: "arrow.right.circle")
@@ -158,8 +158,8 @@ struct SettingView: View {
             }.padding(.bottom, 200.0)
                 .padding(.trailing, 38.0)
             
-                .fullScreenCover(isPresented: $About) {
-                    Ivy.About()
+                .fullScreenCover(isPresented: $ContentView) {
+                    Ivy.ContentView()
                     
                        // .fullScreenCover(isPresented: $About) {
                          //   Ivy.About()
