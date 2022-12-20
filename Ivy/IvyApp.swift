@@ -11,8 +11,8 @@ import SwiftUI
 struct IvyApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
-           // OnbordingView()
+           // MainTabView()
+            OnbordingView()
         }
     }
 }
