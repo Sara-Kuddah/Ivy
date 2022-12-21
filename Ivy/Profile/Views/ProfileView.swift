@@ -6,22 +6,31 @@
 //
 
 import SwiftUI
+import CloudKit
 
 struct ProfileView: View {
     @State private var GoToSting = false
     @State private var selectedFilter: TweetFilterViewModel = .tweets
     @Namespace var animation
+    
+    @State var corentUser = ""
+//    corentUser["name"] = "Jumana Khaled"
+//    corentUser["bio"] = "bio"
+//    corentUser["imageURL"] = "na"
+ //   @State var feeds : [Feed] = []
+   // @State var points : [Point] = []
+//    @State var badges : [Badge] = []
     @State var images = ["saveEarth", "energySaving", "ecoWater"]
     @State var points  = [[50,100], [20,100], [130,200], [90,100]]
-//    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
-    var body: some View {
-       
+    //    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    var body: some View{
+        
         VStack(alignment: .leading){
             headerView
             
             userInfoDetails
-                
+            
             tweetFilterBar
             switch selectedFilter{
             case .tweets:
@@ -32,17 +41,136 @@ struct ProfileView: View {
                 tweetsView
             }
             
-           
+            
             Spacer()
         }
+//        .onAppear{
+//            fetchUser()
+////            fetchFeed()
+////            fetchPoint()
+////            fetchBadge()
+////            //addFeed()
+//        }
     }
+    //View Model
+//     func fetchUser(){
+//        let container = CKContainer(identifier: "iCloud.com.thedreamers.ivy")
+//        let predicateAll = NSPredicate(value: true)
+//        let predicateJumana = NSPredicate(format: "name ==%@", "Jumana Khaled")
+//        let query = CKQuery(recordType: "User", predicate: predicateJumana)
+//
+//        let operations = CKQueryOperation(query: query)
+//        operations.recordMatchedBlock = {  recordId, result in
+////            case .success( let records):
+////            let learner = Learner(record: records)
+////            self.learners.append(learner)
+//            switch result {
+//            case .success( let records):
+//                let user = User(record: records)
+//                self.corentUser =  "\(user.firstName) \(user.lastName)"
+//            case .failure( let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+//        container.publicCloudDatabase.add(operations)
+//    }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(  )
+        
     }
 }
+    //Model=====
+
+//    struct User: Identifiable {
+//
+//        let id: CKRecord.ID
+//        let userId : String
+//        let firstName : String
+//        let lastName : String
+//        let email : String
+//        let bio : String
+//        let userImage: UIImageAsset
+//        let feedText: [String]
+//        let feedImage: [UIImage]
+//        let pointName: [String]
+//        let pointTotal: [Int]
+//        let pointGained: [Int]
+//        let badgeName: [String]
+//        let badgeImage: [UIImage]
+//
+//
+//
+//
+//        init(record:CKRecord) {
+//            self.id = record.recordID
+//            self.userId = record["userId"]  as? String ?? "N/A"
+//            self.firstName = record["firstName"]  as? String ?? "N/A"
+//            self.lastName = record["lastName"]  as? String ?? "N/A"
+//            self.email = record["email"]  as? String ?? "N/A"
+//            self.bio = record["bio"] as? String ?? "N/A"
+//            self.userImage = record["userImage"] as? UIImageAsset ??  UIImage(named:"profile")?.jpegData(compressionQuality: 1.0)
+//            self.feedText = []
+//            self.feedImage = []
+//            self.pointName = []
+//            self.pointTotal = []
+//            self.pointGained = []
+//            self.badgeName = []
+//            self.badgeImage = []
+//        }
+//
+//    }
+//struct Feed: Identifiable {
+//
+//    let id: CKRecord.ID
+//    let text : String
+//    let imageURL: String
+//    let user : CKRecord.Reference
+//    //CKRecord.Reference
+//   //, refrence
+//    init(record:CKRecord , user:CKRecord.Reference) {
+//        self.id = record.recordID
+//        self.imageURL = record["imageURL"]  as? String ?? "N/A"
+//
+//        self.user = CKRecord.Reference(recordID: user.recordID, action: <#CKRecord.ReferenceAction#>)
+//    }
+//
+//}
+//struct Point: Identifiable {
+//
+//    let id: CKRecord.ID
+//    let name : String
+//    let total: Int
+//    let gained: Int
+//    let user : CKRecord.Reference
+//
+//    init(record:CKRecord, user:CKRecord.Reference) {
+//        self.id = record.recordID
+//        self.name = record["text"]  as? String ?? "N/A"
+//        self.total = record["total"] as? Int ?? 100
+//        self.gained = record["gained"] as? Int ?? 0
+//        self.user = user
+//
+//    }
+//
+//}
+//struct Badge: Identifiable {
+//    let id: CKRecord.ID
+//    let name : String
+//    let imageURL: String
+//    let user : CKRecord.Reference
+//
+//    init(record:CKRecord, user:CKRecord.Reference) {
+//        self.id = record.recordID
+//        self.name = record["text"]  as? String ?? "N/A"
+//        self.imageURL = record["imageURL"]  as? String ?? "N/A"
+//        self.user = user
+//    }
+    
+//}
+    //==========
 //(alignment: .bottomLeading)
 extension ProfileView{
     var headerView: some View{
@@ -212,6 +340,7 @@ extension ProfileView{
             }
         }
                 }
+    
     var repliesView: some View{
         ScrollView{
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(),spacing: 4), count: 3), content: {

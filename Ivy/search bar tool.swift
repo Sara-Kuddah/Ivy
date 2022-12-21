@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct search_bar_tool: View {
     @State private var searchText = ""
     var body: some View {
@@ -28,6 +29,10 @@ struct search_bar_tool: View {
 
 struct search_bar_tool_Previews: PreviewProvider {
     static var previews: some View {
-        search_bar_tool()
+        if #available(iOS 16.0, *) {
+            search_bar_tool()
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
